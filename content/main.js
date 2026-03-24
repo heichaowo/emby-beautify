@@ -1,3 +1,18 @@
+// 动态注入字体 (Chrome 扩展 CSS 不支持 @import 外部资源, 需通过 JS 注入)
+(function injectFonts() {
+	const fonts = [
+		'https://fonts.loli.net/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap',
+		'https://cdn.jsdelivr.net/npm/harmonyos-sans-font@1.0.3/css/index.min.css',
+		'https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css',
+	];
+	fonts.forEach(href => {
+		const link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.href = href;
+		document.head.appendChild(link);
+	});
+})();
+
 class Home {
 	static start() {
 		this.cache = {

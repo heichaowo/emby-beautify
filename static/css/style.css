@@ -1,10 +1,4 @@
-/* === 字体加载 (国内可用 CDN) === */
-/* 英文: Plus Jakarta Sans */
-@import url('https://fonts.loli.net/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
-/* 中文 UI: HarmonyOS Sans SC */
-@import url('https://cdn.jsdelivr.net/npm/harmonyos-sans-font@1.0.3/css/index.min.css');
-/* 轮播标题: 霞鹜文楷 */
-@import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css');
+/* 字体通过 main.js 动态注入 <link> 加载 (Chrome 扩展 CSS 不支持 @import 外部资源) */
 
 :root {
 	/*

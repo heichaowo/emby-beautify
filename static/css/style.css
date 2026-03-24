@@ -8,6 +8,21 @@
 	--heicha-library-label-mode: always;
 }
 
+/* 全局字体优化 — 纯系统字体, 零网络开销 */
+body, .emby-input, .emby-textarea, .emby-select, button {
+	font-family:
+		"SF Pro Display", "SF Pro Text",          /* macOS */
+		-apple-system, BlinkMacSystemFont,        /* macOS fallback */
+		"Segoe UI", "Segoe UI Variable",          /* Windows */
+		"PingFang SC", "Hiragino Sans GB",        /* CJK macOS */
+		"Microsoft YaHei UI", "Microsoft YaHei",  /* CJK Windows */
+		"Noto Sans CJK SC", "Source Han Sans SC", /* CJK Linux */
+		system-ui, sans-serif !important;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
 ::-webkit-scrollbar {
 	width: .3em !important;
 }

@@ -112,7 +112,7 @@ _No extension needed, deploy directly to the server for seamless use_
 ```bash
 # Docker Version (re-execute if the script is updated)
 # EmbyServer is the container name — change it if yours is different
-docker exec EmbyServer /bin/sh -c 'cd /system/dashboard-ui && wget -O - https://tinyurl.com/2p97xcpd | sh'
+docker exec EmbyServer /bin/sh -c 'cd /system/dashboard-ui && wget -O - https://raw.githubusercontent.com/heichaowo/Emby-Fluent/main/script.sh | sh'
 
 # Reference tutorial (unofficial): https://cangshui.net/5167.html
 ```

@@ -112,7 +112,7 @@ _无需安装插件，直接部署至服务端，用户无缝使用_
 ```bash
 # Docker 版 (如遇脚本更新, 重新执行即可)
 # EmbyServer 为容器名, 如果你的容器名不是这个请改成正确的
-docker exec EmbyServer /bin/sh -c 'cd /system/dashboard-ui && wget -O - https://tinyurl.com/2p97xcpd | sh'
+docker exec EmbyServer /bin/sh -c 'cd /system/dashboard-ui && wget -O - https://raw.githubusercontent.com/heichaowo/Emby-Fluent/main/script.sh | sh'
 
 # 参考教程(非官方): https://cangshui.net/5167.html
 ```
